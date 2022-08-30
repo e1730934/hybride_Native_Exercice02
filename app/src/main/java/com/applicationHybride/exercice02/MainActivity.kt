@@ -1,13 +1,10 @@
 package com.applicationHybride.exercice02
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.AdapterView
-import android.widget.Spinner
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
@@ -44,6 +41,12 @@ class MainActivity : AppCompatActivity() {
                         findViewById<TextView>(R.id.lblFetchedSunrise).text = "${data.getString("sunrise")} UTC"
                         findViewById<TextView>(R.id.lblFetchedSunset).text = "${data.getString("sunset")} UTC"
                         findViewById<TextView>(R.id.lblFetchedPrecip).text = "${data.getString("precip")} mm"
+
+                        val weatherIcon = data.getJSONObject("weather").getString("icon")
+                        val imgWeather = findViewById<ImageView>(R.id.imgWeather)
+                        val drawableResourceId: Int =
+                            resources.getIdentifier(weatherIcon, "drawable", packageName)
+                        imgWeather.setImageResource(drawableResourceId)
                     },
                     Response.ErrorListener {
                         //Traiter la réponse lorsqu'une erreur se produit (it contient erreur)

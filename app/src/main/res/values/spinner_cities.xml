@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="spinner_cities">
+        <item>Montreal,Canada</item>
+        <item>Trois-Rivières,Canada</item>
+        <item>Québec,Canada</item>
+        <item>Ottawa,Canada</item>
+        <item>Toronto,Canada</item>
+        <item>Vancouver,Canada</item>
+        <item>Edmonton,Canada</item>
+        <item>San Francisco,US</item>
+        <item>New York City,US</item>
+        <item>Washington,US</item>
+    </array>
+</resources>

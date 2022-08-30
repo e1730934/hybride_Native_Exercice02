@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">exercice02</string>
+    <string name="lblChooseCities">Choisir une ville: </string>
+    <string name="lblSunrise">Lever du soleil (sunrise): </string>
+    <string name="lblSunset">Coucher du soleil (sunset): </string>
+    <string name="lbltemp">Température actuelle (temp): </string>
+    <string name="lblPrecip">Probabilité de précipitation (precip): </string>
+    <string name="imgWeather">Image météo (imageWeather): </string>
+    <string name="weatherbit_key">0d56688fe07e4abfb5808e72f2d97253</string>
+</resources>
